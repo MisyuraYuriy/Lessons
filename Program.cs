@@ -13,7 +13,7 @@ namespace Lessons_console
         static void Main(string[] args)
 
         {
-            #region Конвертація строк в числа та виправлення сепаратору
+            #region Конвертація строк в числа та виправлення сепаратору-1
 
             String aa = "100,15"; //= Convert.ToInt32(a);
             String bb = "1n15"; //= Convert.ToInt32(a);
