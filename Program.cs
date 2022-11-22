@@ -121,29 +121,71 @@ namespace Lessons_console
                      <= меньше или равно
              */
 
-            //int a = 5; 
-            //int b = 5;
-                                          // Результаты:
-            //Console.WriteLine(a == b);  // true
-            //Console.WriteLine(a != b);  // false
-            //Console.WriteLine(a > b);   // false 
-            //Console.WriteLine(a < b);   // false
+            /*
+            int a = 5; 
+            int b = 5;
+                                        // Результаты:
+            Console.WriteLine(a == b);  // true
+            Console.WriteLine(a != b);  // false
+            Console.WriteLine(a > b);   // false 
+            Console.WriteLine(a < b);   // false
+            */
+            /*
+                        int a = 8;
+                        int b = 6;
+                        Console.WriteLine(a <= b);   // false
+                        Console.WriteLine(a >= b);   // true
+                        Console.Read();
+            */
+            #endregion
 
-            int a = 8;
-            int b = 6;
-            Console.WriteLine(a <= b);   // false
-            Console.WriteLine(a >= b);   // true
+            #region IF ELSE (на примере чётное/нечётное)
+            //определяем, чётное или нечётное
+            /*int a = 5;
+            int result = a % 2;
+
+            if (result==0) 
+            { 
+                Console.WriteLine("Число чётное"); 
+            }
+            else 
+            { 
+                Console.WriteLine("Число нечётное");
+            }
+
             Console.Read();
+            */
+            #endregion
 
 
+            #region Логические операторы
+            /*
+             *      &&  Сокращённое И
+             *      ||  Сокращённое ИЛИ
+             *      &   И
+             *      |   ИЛИ
+             *      !   НЕ (унарный). Змінює значення BOOL на протилежне.
+             */
+
+            bool isInfected = false;
+           
+            if (!isInfected)
+            {
+                Console.WriteLine("Здоров");
+            }
+            else
+            {
+                Console.WriteLine("Болен");
+            }
+            
+
+            Console.Read();
 
 
             #endregion
 
+
+
         }
-
-
-
     }
-
 }
