@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Globalization;
 using System.Security.Cryptography.X509Certificates;
 
@@ -155,7 +156,7 @@ namespace Lessons_console
             #endregion
 
             #region IF ELSE (на примере чётное/нечётное)
-            //определяем, чётное или нечётное
+            //определяем, чётное или нечётное. & повертає два значення: 0 якщо нема залишку, 1 - якщо є залишок
             /*int a = 5;
             int result = a % 2;
 
@@ -226,8 +227,35 @@ namespace Lessons_console
 
             #endregion
 
-        } 
 
+            #region Оператор множественного выбора SWITCH
+
+            int a =int.Parse(Console.ReadLine());
+
+            switch (a)
+            {
+                case 1:
+                    Console.WriteLine("вы ввели число 1");
+                    break;
+                case 2:
+                    Console.WriteLine("вы ввели число два");
+                    break;
+                default: 
+                    Console.WriteLine("Чо это?");
+                    break;
+            }
+
+
+            #endregion
+        }
         
+
+       
+
+
+
+       
+
+
     }
 }
