@@ -1,14 +1,29 @@
 ﻿using System;
 using System.Globalization;
-
+using System.Security.Cryptography.X509Certificates;
 
 namespace Lessons_console
 {
     class Program
     {
-        static void Main(string[] args)
+        /*
+        // Ці дві функції використовуються для уроку ЛОГИЧЕСКИЕ ОПЕРАТОРЫ
 
+        public static bool GetTemperature()
         {
+            return false;
+        }
+        public static bool GetCoolingStatus()
+        {
+            return true;
+        }
+        */
+
+
+
+        static void Main(string[] args)
+        {
+
             #region Конвертація строк в числа та виправлення сепаратору
             /*
             String aa = "100,15"; //= Convert.ToInt32(a);
@@ -165,8 +180,15 @@ namespace Lessons_console
              *      &   И
              *      |   ИЛИ
              *      !   НЕ (унарный). Змінює значення BOOL на протилежне.
+             *      
+             *      Якщо використовуємо | , будуть виконуваться обидві функції, навіть якщо перша повертатиме TRUE.
+             *      Якщо використовуємо || , друга функція буде виконуватися тільки якщо перша повернула FALSE.
+             *      Тому || й має назву СОКРАЩЁННОЕ ИЛИ.
+             *      
+             *      З & та && аналогічно. При & навіть якщо перша функція поверне FALSE, буде виконана друга функція.
              */
 
+            /*
             bool isInfected = false;
            
             if (!isInfected)
@@ -177,15 +199,35 @@ namespace Lessons_console
             {
                 Console.WriteLine("Болен");
             }
-            
 
             Console.Read();
+            */
 
+
+            //int fanSpeed = 0;
+            //bool isHighTemperature = true;
+            //bool hasNoCooling = fanSpeed<=0;
+            //bool isHighTemperature = false;
+            //bool hasNoCooling = true;
+
+            /*
+            if (GetTemperature() || GetCoolingStatus())
+            {
+                Console.WriteLine("Угроза повреждения процессора!");
+            }
+            else
+            {
+                Console.WriteLine("Угрозы нет!");
+            }
+
+
+            Console.Read();
+            */
 
             #endregion
 
+        } 
 
-
-        }
+        
     }
 }
